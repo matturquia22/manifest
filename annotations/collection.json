@@ -1,0 +1,7 @@
+{
+  "@type" : "sc:Layer",
+  "otherContent" : [ "https://matturquia22.github.io/manifest/annotations/arizona.json" ],
+  "@id" : "https://matturquia22.github.io/manifest/annotations/collection.json",
+  "label" : "All annotations loaded in matturquia22/manifest project",
+  "@context" : "http://iiif.io/api/presentation/2/context.json"
+}
