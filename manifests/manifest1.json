@@ -1,0 +1,86 @@
+{
+  "@context" : "http://iiif.io/api/presentation/2/context.json",
+  "@id" : "https://matturquia22.github.io/manifest/manifests/manifest1.json",
+  "@type" : "sc:Manifest",
+  "label" : "Manifest1",
+  "metadata" : [ ],
+  "description" : [ {
+    "@value" : "Arizona Trip",
+    "@language" : "en"
+  } ],
+  "license" : "https://creativecommons.org/licenses/by/4.0/",
+  "attribution" : "Matt Urquia",
+  "sequences" : [ {
+    "@id" : "http://2cbcf1f7-2840-4ca0-a7df-923a4544f034",
+    "@type" : "sc:Sequence",
+    "label" : [ {
+      "@value" : "Normal Sequence",
+      "@language" : "en"
+    } ],
+    "canvases" : [ {
+      "@id" : "http://1e9f9ddd-7d6a-4e96-b3b2-1b315d425ece",
+      "@type" : "sc:Canvas",
+      "label" : "Canvas1",
+      "height" : 1380,
+      "width" : 1035,
+      "images" : [ {
+        "@context" : "http://iiif.io/api/presentation/2/context.json",
+        "@id" : "http://30606eb1-8965-49e7-bc98-4e4e698001ec",
+        "@type" : "oa:Annotation",
+        "motivation" : "sc:painting",
+        "resource" : {
+          "@id" : "https://iiif.archivelab.org/iiif/img-6035_202207/full/full/0/default.jpg",
+          "@type" : "dctypes:Image",
+          "format" : "image/jpeg",
+          "service" : {
+            "@context" : "http://iiif.io/api/image/2/context.json",
+            "@id" : "https://iiif.archivelab.org/iiif/img-6035_202207",
+            "profile" : [ "http://iiif.io/api/image/2/level2.json" ]
+          },
+          "height" : 1380,
+          "width" : 1035
+        },
+        "on" : "http://1e9f9ddd-7d6a-4e96-b3b2-1b315d425ece"
+      } ],
+      "related" : ""
+    }, {
+      "@id" : "http://18d20801-cd36-44bc-be6c-1fa64179b2be",
+      "@type" : "sc:Canvas",
+      "label" : "Canvas2",
+      "height" : 979,
+      "width" : 734,
+      "images" : [ {
+        "@context" : "http://iiif.io/api/presentation/2/context.json",
+        "@id" : "http://e15e0730-2a21-4756-a5fd-974f024a438f",
+        "@type" : "oa:Annotation",
+        "motivation" : "sc:painting",
+        "resource" : {
+          "@id" : "https://iiif.archivelab.org/iiif/img-6008_202207/full/full/0/default.jpg",
+          "@type" : "dctypes:Image",
+          "format" : "image/jpeg",
+          "service" : {
+            "@context" : "http://iiif.io/api/image/2/context.json",
+            "@id" : "https://iiif.archivelab.org/iiif/img-6008_202207",
+            "profile" : [ "http://iiif.io/api/image/2/level2.json" ]
+          },
+          "height" : 979,
+          "width" : 734
+        },
+        "on" : "http://18d20801-cd36-44bc-be6c-1fa64179b2be"
+      } ],
+      "related" : ""
+    } ]
+  } ],
+  "structures" : [ {
+    "@id" : "http://example.org/iiif/book1/range/top",
+    "@type" : "sc:Range",
+    "label" : "Table of Content",
+    "viewingHint" : "top",
+    "ranges" : [ "http://example.org/iiif/book1/range/intro" ]
+  }, {
+    "@id" : "http://example.org/iiif/book1/range/intro",
+    "@type" : "sc:Range",
+    "label" : "Introduction",
+    "canvases" : [ "http://1e9f9ddd-7d6a-4e96-b3b2-1b315d425ece" ]
+  } ]
+}
